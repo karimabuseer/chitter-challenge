@@ -6,6 +6,12 @@
 * Created a peeps/new route to send the post body to. Created a peep model object to handle the request.
 * Peep model object pulls user form submission into an array. Created a method to print the array in reverse chronological order.
 * Edited home route view (index) to contain the information outputed by the peeps model (First and Second user stories complete)
+* Model is only retaining one field of information (peep content), so no point building database into MVP. Model uses class instance var array to store peeps
+* Created view that iterates through class variable of peeps and prints them in reverse order, satisfying first two user stories
+* Created stand in delete button. Not part of user story, but good practice.
+* Created test with expectation of time related to each tweet. Failed as current output is only time.
+* Created a chitter database and a chitter database in anticipation of needing to have an additional field.
+* Realised that I needed an additional gem to help me handle time tests. 
 
 Features:
 -------
