@@ -1,17 +1,11 @@
-Chitter Challenge
-=================
-
-* Feel free to use Google, your notes, books, etc. but work on your own
-* If you refer to the solution of another coach or student, please put a link to that in your README
-* If you have a partial solution, **still check in a partial solution**
-* You must submit a pull request to this repo with your code by 9am Monday morning
-
-Challenge:
--------
-
-As usual please start by forking this repo.
-
-We are going to write a small Twitter clone that will allow the users to post messages to a public stream.
+# Chitter Challenege
+## Creation breakdown
+* Started with bundle install. Testing infrastructure created using Capybara; base Sinatra app created using modular Sinatra.
+* Was very comfortable using PG for accessesing database records, so read the ROM docs as was very keen to try Object-Relational Mapping.
+* Created a home route to host an index ERB file - containing a form for users to submit peeps. 
+* Created a peeps/new route to send the post body to. Created a peep model object to handle the request.
+* Peep model object pulls user form submission into an array. Created a method to print the array in reverse chronological order.
+* Edited home route view (index) to contain the information outputed by the peeps model (First and Second user stories complete)
 
 Features:
 -------

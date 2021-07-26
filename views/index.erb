@@ -1,0 +1,17 @@
+Welcome to Chitter!
+<form action='/peeps/new' method='post'>
+<label for='peep'>Submit Peep:
+<input type='text' name='peep' id='url'>
+<input type='submit' value='Add'>
+</form>
+
+<ul>
+  <% ((Peep.all).reverse).each do |peep| %>
+    <li class='peep'> 
+      <%= peep %>
+      <form action="/peeps/new<%= peep %>" method="post">
+        <input type="submit" value="Delete Peep" />
+      </form> 
+    </li>
+  <% end %>
+</ul>
